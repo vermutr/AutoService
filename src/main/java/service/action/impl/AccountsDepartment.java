@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import model.Car;
-import model.Employees;
+import model.car.Car;
+import model.stuff.Employees;
 import service.action.Action;
-import service.stuff.Stuff;
 import service.stuff.impl.AccountsStuff;
 
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 @AllArgsConstructor
 public class AccountsDepartment implements Action {
 

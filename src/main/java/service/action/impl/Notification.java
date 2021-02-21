@@ -8,7 +8,6 @@ import lombok.Data;
 
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 @AllArgsConstructor
 public class Notification implements Action {
 

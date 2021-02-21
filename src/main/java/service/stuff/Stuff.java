@@ -1,6 +1,6 @@
 package service.stuff;
 
-import model.Employees;
+import model.stuff.Employees;
 
 public interface Stuff {
 

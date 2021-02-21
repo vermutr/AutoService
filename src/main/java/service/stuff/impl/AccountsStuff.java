@@ -1,8 +1,12 @@
 package service.stuff.impl;
 
-import model.Employees;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import model.stuff.Employees;
 import service.stuff.Stuff;
 
+@Data
+@NoArgsConstructor
 public class AccountsStuff implements Stuff {
 
 
