@@ -3,9 +3,8 @@ package service.action.impl;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import model.car.Car;
-import model.stuff.Employees;
+import executeWork.stuff.Employee;
 import service.action.Action;
 import service.stuff.impl.AccountsStuff;
 
@@ -18,12 +17,12 @@ public class AccountsDepartment implements Action {
     private final Notification notification=new Notification();
     private final Car car=new Car();
     private final AccountsStuff stuff = new AccountsStuff();
-    private Employees employees; //создать лист можно и рандомно помещать в стаф типа кто свободен из работриков
+    private Employee employee; //создать лист можно и рандомно помещать в стаф типа кто свободен из работриков
 
 
     @Override
     public void doSomething() {
-        stuff.qualification(employees);
+        stuff.qualification(employee);
         notification.setMessage("Start count money for the work");
         System.out.println(notification);
         System.out.println("Your car: "+ car);

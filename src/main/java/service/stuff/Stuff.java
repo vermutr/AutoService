@@ -1,9 +1,9 @@
 package service.stuff;
 
-import model.stuff.Employees;
+import executeWork.stuff.Employee;
 
 public interface Stuff {
 
-    void qualification(Employees employees);
+    void qualification(Employee employee);
 
 }

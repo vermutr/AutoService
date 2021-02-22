@@ -1,10 +1,8 @@
 package service.stuff.impl;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import model.stuff.Employees;
+import executeWork.stuff.Employee;
 import service.stuff.Stuff;
 
 @Data
@@ -16,8 +14,8 @@ public class RepairStuff implements Stuff {
     может быть наследование по уровню квалификации
     */
     @Override
-    public void qualification(Employees employees) {
+    public void qualification(Employee employee) {
         //employees representation
-        System.out.println("Hello, I'm good at fixing cars");
+        System.out.println("Hello, I'm good at fixing cars and my name is " + employee.getName() + " " + employee.getSurname());
     }
 }

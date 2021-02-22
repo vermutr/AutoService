@@ -1,4 +1,4 @@
-package model.stuff;
+package executeWork.stuff;
 
 
 import lombok.*;
@@ -8,9 +8,9 @@ import model.DefaultModel;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employees extends DefaultModel {
+public class Employee extends DefaultModel {
     private String name;
     private String surname;
     private Profession profession;
-    private EmployeesStatus employeesStatus;
+    private EmployeeStatus employeeStatus;
 }

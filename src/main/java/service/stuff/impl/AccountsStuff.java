@@ -2,7 +2,7 @@ package service.stuff.impl;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import model.stuff.Employees;
+import executeWork.stuff.Employee;
 import service.stuff.Stuff;
 
 @Data
@@ -15,7 +15,7 @@ public class AccountsStuff implements Stuff {
      */
 
     @Override
-    public void qualification(Employees employees) {
+    public void qualification(Employee employee) {
         //employees representation
         System.out.println("I am accountant");
     }

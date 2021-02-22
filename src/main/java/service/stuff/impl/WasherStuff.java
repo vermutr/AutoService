@@ -1,10 +1,8 @@
 package service.stuff.impl;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import model.stuff.Employees;
+import executeWork.stuff.Employee;
 import service.stuff.Stuff;
 
 
@@ -18,8 +16,8 @@ public class WasherStuff implements Stuff {
     */
 
     @Override
-    public void qualification(Employees employees) {
+    public void qualification(Employee employee) {
         //employees representation
-        System.out.println("I am Washer Man");
+        System.out.println("I am Washer Man and my name is " + employee.getName() + " " + employee.getSurname());
     }
 }
