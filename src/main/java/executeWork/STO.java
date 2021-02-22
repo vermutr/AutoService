@@ -18,8 +18,6 @@ public class STO {
     private final List<Employee> freeRepairEmployees=new ArrayList<>();
     private final List<Employee> freeWasherEmployees=new ArrayList<>();
 
-
-    private final RepairCarImpl repairCar=new RepairCarImpl();
     private final RepairStuff repairStuff = new RepairStuff();
     private final WasherStuff washerStuff = new WasherStuff();
 
