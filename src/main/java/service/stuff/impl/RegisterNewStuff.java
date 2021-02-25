@@ -1,19 +1,16 @@
 package service.stuff.impl;
 
-import model.stuff.Employee;
-import model.stuff.EmployeeStatus;
-import model.stuff.Profession;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import model.stuff.Employee;
 import service.stuff.Stuff;
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Data
-public class ListOfStuff implements Stuff {
+public class RegisterNewStuff implements Stuff {
     private final List<Employee> employeeList;
 
-    public ListOfStuff(final List<Employee> employeeList) {
+    public RegisterNewStuff(final List<Employee> employeeList) {
         this.employeeList = employeeList;
     }
 

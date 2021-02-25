@@ -10,11 +10,12 @@ import service.carService.Work;
 import service.carService.impl.RepairCarImpl;
 import service.sto.Sto;
 import service.stuff.Stuff;
-import service.stuff.impl.ListOfStuff;
+import service.stuff.impl.RegisterNewStuff;
 import service.stuff.impl.RepairStuff;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class ApiConfiguration {
 
@@ -37,7 +38,7 @@ public class ApiConfiguration {
         return new HatchBackCar(1,"Mercedes Benz","E290");
     }
 
-    public ListOfStuff listOfStuff(){
+    public RegisterNewStuff listOfStuff(){
         List<Employee> employeeList = new ArrayList<>();
         Employee employee =new Employee("Vasia", "Terkin", Profession.REPAIR, EmployeeStatus.FREE);
         Employee employee1 =new Employee("Kolya", "Trinichin", Profession.WASHER, EmployeeStatus.FREE);
@@ -51,10 +52,11 @@ public class ApiConfiguration {
         employeeList.add(employee3);
         employeeList.add(employee4);
         employeeList.add(employee5);
-        return new ListOfStuff(employeeList);
+        return new RegisterNewStuff(employeeList);
     }
 
-    public Sto sto(final ListOfStuff listOfStuff){
-        return new Sto(listOfStuff);
+
+    public Sto sto(final RegisterNewStuff registerNewStuff){
+        return new Sto(registerNewStuff);
     }
 }

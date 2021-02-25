@@ -6,17 +6,17 @@ import model.stuff.EmployeeStatus;
 import model.stuff.Profession;
 import service.carService.Work;
 import service.stuff.Stuff;
-import service.stuff.impl.ListOfStuff;
+import service.stuff.impl.RegisterNewStuff;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
 public class Sto {
 
-    private final ListOfStuff listOfStuff;
+    private final RegisterNewStuff registerNewStuff;
 
-    public Sto(final ListOfStuff listOfStuff) {
-        this.listOfStuff=listOfStuff;
+    public Sto(final RegisterNewStuff registerNewStuff) {
+        this.registerNewStuff = registerNewStuff;
     }
 
 
@@ -39,7 +39,7 @@ public class Sto {
     }
 
     public void executeWork(final Car car, final Work work, final Stuff stuff, final String nameOfWork){
-        final List<Employee> employeeList = listOfStuff.getEmployeeList();
+        final List<Employee> employeeList = registerNewStuff.getEmployeeList();
         Employee employee = getRandomEmployee(employeeList, nameOfWork);
         stuff.stuffMethod(employee);
         work.doYourWork(car);

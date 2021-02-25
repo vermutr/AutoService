@@ -1,7 +1,6 @@
 package service.carService.impl;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import model.car.Car;
 import service.action.impl.Notification;
 import service.carService.Work;
