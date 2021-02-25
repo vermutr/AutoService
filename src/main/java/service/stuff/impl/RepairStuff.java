@@ -2,7 +2,7 @@ package service.stuff.impl;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import executeWork.stuff.Employee;
+import model.stuff.Employee;
 import service.stuff.Stuff;
 
 @Data

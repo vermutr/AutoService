@@ -1,36 +1,26 @@
 package model.car;
 
 
-import model.DefaultModel;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import model.DefaultModel;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Car extends DefaultModel {
 
     private String brand;
     private String model;
 
-    public Car(int id, String brand, String model) {
+    public Car(final int id,
+               final String brand,
+               final String model) {
         super(id);
         this.brand = brand;
         this.model = model;
     }
 
-    void representCar(){
+    public void representCar(){
         System.out.println("unknown car");
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                '}';
     }
 }

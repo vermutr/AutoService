@@ -1,4 +1,4 @@
-package executeWork.stuff;
+package model.stuff;
 
 public enum Profession {
     REPAIR, WASHER

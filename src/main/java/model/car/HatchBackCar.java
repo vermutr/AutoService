@@ -1,21 +1,18 @@
 package model.car;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-
-@EqualsAndHashCode(callSuper = true)
-@Data
-@NoArgsConstructor
 public class HatchBackCar extends Car{
 
-    public HatchBackCar(int id, String brand, String model) {
+    public HatchBackCar(final int id,
+                        final String brand,
+                        final String model) {
         super(id, brand, model);
     }
 
     @Override
-    void representCar() {
+    public void representCar() {
         System.out.println("Hatch-Back Car");
+        System.out.println(getBrand() + " " + getModel());
+
     }
 
 

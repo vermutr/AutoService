@@ -1,6 +1,6 @@
 package service.stuff;
 
-import executeWork.stuff.Employee;
+import model.stuff.Employee;
 
 public interface Stuff {
 

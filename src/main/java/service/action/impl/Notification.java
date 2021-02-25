@@ -17,8 +17,4 @@ public class Notification implements Action {
         System.out.println(message);
     }
 
-    @Override
-    public String toString() {
-        return  message;
-    }
 }

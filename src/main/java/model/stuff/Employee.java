@@ -1,4 +1,4 @@
-package executeWork.stuff;
+package model.stuff;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
