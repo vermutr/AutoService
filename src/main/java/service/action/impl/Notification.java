@@ -1,9 +1,8 @@
 package service.action.impl;
 
+import service.action.Action;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import service.action.Action;
 import lombok.Data;
 
 @Data

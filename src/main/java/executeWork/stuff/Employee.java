@@ -1,7 +1,9 @@
 package executeWork.stuff;
 
-
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import model.DefaultModel;
 
 @EqualsAndHashCode(callSuper = true)

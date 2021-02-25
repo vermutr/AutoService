@@ -15,7 +15,7 @@ public class AccountsStuff implements Stuff {
      */
 
     @Override
-    public void qualification(Employee employee) {
+    public void stuffMethod(Employee employee) {
         //employees representation
         System.out.println("I am accountant");
     }

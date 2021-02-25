@@ -4,6 +4,6 @@ import executeWork.stuff.Employee;
 
 public interface Stuff {
 
-    void qualification(Employee employee);
+    void stuffMethod(Employee employee);
 
 }
